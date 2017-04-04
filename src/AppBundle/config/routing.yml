@@ -1,0 +1,15 @@
+api_index:
+    path: /api/index
+    defaults: { _controller: AppBundle:Api:index }
+    
+api_get:
+    path: /api/get
+    defaults: { _controller: AppBundle:Api:get }
+    
+api_post:
+    path: /api/post
+    defaults: { _controller: AppBundle:Api:post }
+    
+api_getMonedas:
+    path: /api/getMonedas
+    defaults: { _controller: AppBundle:Api:getMonedas }
