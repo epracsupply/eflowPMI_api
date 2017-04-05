@@ -46,10 +46,10 @@ doctrine:
         connections:
             default:
                 driver_class:   Realestate\MssqlBundle\Driver\PDODblib\Driver
-                host:           P3NWDSH12SQL-v03.shr.prod.phx3.secureserver.net
-                dbname:         eflow3PL
-                user:           eflow3PL
-                password:       wolFe224\
+                host:           172.16.1.49
+                dbname:         ESTOCKMIZRATEX
+                user:           usreprac    
+                password:       usreprac
                 charset:  UTF8
         # if using pdo_sqlite as your database driver:
         #   1. add the path in parameters.yml
