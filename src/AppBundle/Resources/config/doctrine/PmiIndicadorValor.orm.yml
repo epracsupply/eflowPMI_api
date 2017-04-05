@@ -1,0 +1,34 @@
+AppBundle\Entity\PmiIndicadorValor:
+    type: entity
+    table: PMI_INDICADOR_VALOR
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        codigoIndicador:
+            type: string
+            nullable: false
+            length: 20
+            options:
+                fixed: false
+            column: CODIGOINDICADOR
+        periodo:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            column: PERIODO
+        valor:
+            type: decimal
+            nullable: false
+            precision: 18
+            scale: 3
+            column: VALOR
+    lifecycleCallbacks: {  }

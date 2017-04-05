@@ -1,0 +1,68 @@
+AppBundle\Entity\PmiDashboardIndicador:
+    type: entity
+    table: PMI_DASHBOARD_INDICADOR
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        codigoDashboard:
+            type: string
+            nullable: false
+            length: 20
+            options:
+                fixed: false
+            column: CODIGODASHBOARD
+        codigoIndicador:
+            type: string
+            nullable: false
+            length: 20
+            options:
+                fixed: false
+            column: CODIGOINDICADOR
+        tipoGrafico:
+            type: string
+            nullable: false
+            length: 20
+            options:
+                fixed: false
+            column: TIPOGRAFICO
+        cantidad:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            column: CANTIDAD
+        periodos:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            column: PERIODOS
+        textox:
+            type: string
+            nullable: false
+            length: 150
+            options:
+                fixed: false
+            column: TEXTOX
+        textoy:
+            type: string
+            nullable: false
+            length: 150
+            options:
+                fixed: false
+            column: TEXTOY
+        posicion:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            column: POSICION
+    lifecycleCallbacks: {  }

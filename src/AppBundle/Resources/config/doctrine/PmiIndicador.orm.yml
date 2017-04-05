@@ -1,0 +1,63 @@
+AppBundle\Entity\PmiIndicador:
+    type: entity
+    table: PMI_INDICADOR
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        codigoIndicador:
+            type: string
+            nullable: false
+            length: 20
+            options:
+                fixed: false
+            column: CODIGOINDICADOR
+        nombre:
+            type: string
+            nullable: false
+            length: 50
+            options:
+                fixed: false
+            column: NOMBRE
+        descripcion:
+            type: string
+            nullable: false
+            length: 200
+            options:
+                fixed: false
+            column: DESCRIPCION
+        periodicidad:
+            type: string
+            nullable: false
+            length: 10
+            options:
+                fixed: true
+            column: PERIODICIDAD
+        valorMeta:
+            type: decimal
+            nullable: false
+            precision: 18
+            scale: 3
+            column: VALORMETA
+        valorCritico:
+            type: decimal
+            nullable: false
+            precision: 18
+            scale: 3
+            column: VALORCRITICO
+        tendenciaPositiva:
+            type: boolean
+            nullable: false
+            column: TENDENCIAPOSITIVA
+        porcentual:
+            type: boolean
+            nullable: false
+            column: PORCENTUAL
+    lifecycleCallbacks: {  }

@@ -46,8 +46,8 @@ doctrine:
         connections:
             default:
                 driver_class:   Realestate\MssqlBundle\Driver\PDODblib\Driver
-                host:           172.16.1.49
-                dbname:         ESTOCKMIZRATEX
+                host:           SISTEMA-PC-YF\SQL
+                dbname:         usreprac
                 user:           usreprac    
                 password:       usreprac
                 charset:  UTF8

@@ -1,0 +1,43 @@
+AppBundle\Entity\PmiDashboard:
+    type: entity
+    table: PMI_DASHBOARD
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        codigoDashboard:
+            type: string
+            nullable: false
+            length: 20
+            options:
+                fixed: false
+            column: CODIGODASHBOARD
+        titulo:
+            type: string
+            nullable: false
+            length: 50
+            options:
+                fixed: false
+            column: TITULO
+        descripcion:
+            type: string
+            nullable: false
+            length: 200
+            options:
+                fixed: false
+            column: DESCRIPCION
+        template:
+            type: string
+            nullable: false
+            length: 20
+            options:
+                fixed: false
+            column: TEMPLATE
+    lifecycleCallbacks: {  }
